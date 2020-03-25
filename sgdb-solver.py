@@ -137,8 +137,7 @@ if __name__ == "__main__":
 	if len(sys.argv) != 2:
 		sys.exit("Use: %s <input_cnf_formula>" % sys.argv[0])
 
-	start_time = time.time()
-	# Check path errors
+	#start_time = time.time()
 	try:
 		path = str(sys.argv[1])
 	except:
@@ -150,10 +149,10 @@ if __name__ == "__main__":
 
 	correct_interp = cnf.solve()
 	generateOutput(correct_interp)
-	print("--- %s seconds ---" % (time.time() - start_time))
+	#print("--- %s seconds ---" % (time.time() - start_time))
 	
 	#Solution validator
-	os.system("python solution-validator.py "+path+" output.cnf")
+	#os.system("python solution-validator.py "+path+" output.cnf")
 
 
 #LISTS WITH THE POSITION INSTEAD OF THE DICTIONARY -> WIll improve.
