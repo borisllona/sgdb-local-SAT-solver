@@ -101,7 +101,7 @@ if __name__ == '__main__' :
         sys.exit("ERROR: Solver %s without execute (x) permission." % solver)
     #Create file limits.sh
     with open(limits_file, "w") as f:
-        f.write("#!/bin/bash\nulimit -t %i\n$1 $2\n" % timeout)
+        f.write("#!/bin/bash\nulimit -t %i\n./$1 $2\n" % timeout)
     st = os.stat(limits_file)
     os.chmod(limits_file, st.st_mode | stat.S_IXUSR)
 

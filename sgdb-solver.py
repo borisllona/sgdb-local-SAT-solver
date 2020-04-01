@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/home/boris/anaconda3/bin/python
 
 import sys
 import random
