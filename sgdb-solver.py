@@ -1,4 +1,4 @@
-#!/home/boris/anaconda3/bin/python
+#!/bin/python3
 
 import sys
 import random
@@ -153,10 +153,3 @@ if __name__ == "__main__":
 	
 	#Solution validator
 	#os.system("python solution-validator.py "+path+" output.cnf")
-
-
-#LISTS WITH THE POSITION INSTEAD OF THE DICTIONARY -> WIll improve.
-#1st version with dictionaries and random -> 10-30 2s 10-40 5s 20-40 2s 20-60 no. 2
-#2nd version with lists and random -> 20-60 1s 
-# 400 1100 3 -> 280 seg, prop 2,75
-# 400 1000 -> 18 prop 2.5
